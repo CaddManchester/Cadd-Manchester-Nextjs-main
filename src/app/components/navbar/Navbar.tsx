@@ -21,24 +21,15 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-7xl">
-<<<<<<< HEAD
       <nav className="bg-gradient-to-r from-blue-900 via-blue-900 to-blue-950 text-white px-8 py-4 rounded-full shadow-xl border border-blue-300 flex items-center justify-between transition-all duration-300 h-[100px] ">
         
-=======
-      <nav className="bg-[#0f0936]/80 text-gray-100 px-16 py-5 rounded-[90px] flex items-center justify-between transition-all duration-300 h-[100px] ">
->>>>>>> 229be3e9cd6cc8bf00aa57b7ed99ec10b209431b
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           <Image
             src={logo}
             alt="CADD Manchester Logo"
-<<<<<<< HEAD
             width={220}
             height={240}
-=======
-            width={80}
-            height={70}
->>>>>>> 229be3e9cd6cc8bf00aa57b7ed99ec10b209431b
             priority
             className="hover:scale-105 transition duration-300"
           />
@@ -58,7 +49,7 @@ const Navbar = () => {
                 pathname === item.path ? 'text-yellow-300 underline underline-offset-4' : ''
               }`}
               onClick={closeMobileMenu}
-            >
+              >
               {item.name}
             </Link>
           ))}
